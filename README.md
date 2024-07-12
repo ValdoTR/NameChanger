@@ -4,7 +4,7 @@
 
 *NameChanger* is a Python utility for renaming multiple files at a time (can be any file type).
 
-It's a game changer for managing and organizing your files!
+It's a game changer for managing your files!
 
 ## Features
 
@@ -21,8 +21,10 @@ It's a game changer for managing and organizing your files!
 
 1. Adjust the constants in the script according to your needs.
 2. Place your files inside the **input** directory.
-3. Run the script: `python3 script.py`.
-4. All your files will be renamed inside the **output** directory.
+3. Run the script: `python3 script.py [string_to_replace] [replacement_string]`.
+4. The renamed files and their total number will be logged in the terminal.
+
+> All files are copied inside the **output** directory even if they are not renamed, keeping the input and output files consistency.
 
 ## Example
 
@@ -30,19 +32,23 @@ Suppose you have the following directory structure:
 
 ```lua
 input/
-├── dir/
-│   └── foo_2.jpg
-├── foo_1.txt
+├── directory
+│   ├── foo_image.jpg
+│   └── FOO.txt
+└── foo.txt
 ```
 
-Running the script with `STRING_TO_REPLACE = 'foo'` and `REPLACEMENT_STRING = 'bar'` will produce:
+Running `python3 script.py "foo" "bar"` will produce:
 
 ```lua
-input/
-├── dir/
-│   └── bar_2.jpg
-├── bar_1.txt
+output/
+└── directory
+    ├── bar_image.jpg
+    └── FOO.txt
+├── bar.txt
 ```
+
+> Note that the renaming is case-sensitive. That's why "FOO.txt" is not renamed here, neither would be "Foo.txt".
 
 ## Contributing
 
