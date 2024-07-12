@@ -19,10 +19,9 @@ It's a game changer for managing your files!
 
 ## Usage
 
-1. Adjust the constants in the script according to your needs.
-2. Place your files inside the **input** directory.
-3. Run the script: `python3 script.py [string_to_replace] [replacement_string]`.
-4. The renamed files and their total number will be logged in the terminal.
+1. Place your files inside the **input** directory.
+2. Run the script: `python3 script.py [string_to_replace] [replacement_string]`.
+3. The renamed files and their total number will be logged in the terminal.
 
 > All files are copied inside the **output** directory even if they are not renamed, keeping the input and output files consistency.
 
