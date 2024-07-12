@@ -6,6 +6,8 @@
 
 It's a game changer for managing your files!
 
+![An example of logs when running the script](example.webp)
+
 ## Features
 
 - Recursively renames files in directories and subdirectories.
